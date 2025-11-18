@@ -18,9 +18,9 @@ unsigned long previousTask2 = 0;
 Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x28);
 
 /* === PIDパラメータ === */
-float Kp = 20;     // 比例ゲイン
+float Kp = 20.0;     // 比例ゲイン
 float Ki = 10.0;    // 積分ゲイン
-float Kd = 0;     // 微分ゲイン
+float Kd = 5.0;     // 微分ゲイン
 
 float targetAngle =0;  // 目標角度（垂直位置）
 float integral = 0;
